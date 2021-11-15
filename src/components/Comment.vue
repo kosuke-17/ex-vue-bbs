@@ -64,7 +64,3 @@ export default class CommentsComp extends Vue {
   color: red;
 }
 </style>
-
-if (this.name && this.content) { store.commit('addComment', { articleId:
-this.newArticleId, commentName: this.name, commentContent: this.content, }); }
-else { this.errorMessage = '名前またはコメントを入力してください'; }

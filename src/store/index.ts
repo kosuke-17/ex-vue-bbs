@@ -48,6 +48,7 @@ const store = new Vuex.Store({
       );
 
       // filterの返り値にはId一意のデータしかないため、0番目のIndexを入れている。
+      // unshiftじゃなくてsplice(0,0,commentのデータ)もいける
       if (articleById) {
         articleById[0].commentList.unshift(
           new Comment(
