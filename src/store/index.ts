@@ -2,6 +2,9 @@ import { Article } from '@/types/Article';
 import { Comment } from '@/types/Comment';
 import Vue from 'vue';
 import Vuex from 'vuex';
+// envファイルに格納
+const ARTICLE_API = process.env.VUE_APP_API_BASE_URL;
+console.log(ARTICLE_API);
 
 Vue.use(Vuex);
 
